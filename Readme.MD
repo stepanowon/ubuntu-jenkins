@@ -74,14 +74,18 @@ sudo chmod 666 /var/run/docker.sock
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
+#### Jenkins 서버 접속
+* 브라우저를 열고 http://192.168.56.101:8080 으로 접속함
+
+
 ---
 ## Jenkins 분산 에이전트 추가
 #### SSH 키 생성(server1 에서)
 ```ssh
 # ssh-keygen -t rsa 명령어로 키페어 생성
 # 생성된 키페어 중 Public Key를 server, server3으로 복사
-   ssh-copy-id server2
-   ssh-copy-id server3
+   ssh-copy-id 192.168.56.102
+   ssh-copy-id 192.168.56.103
 # jenkins의 Jenkins관리-Credential에 ssh Private Key 등록
 ```
 
