@@ -80,6 +80,9 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ---
 ## Jenkins 분산 에이전트 추가
+#### 사전 조건
+* Agent Node로 등록할 호스트, 인스턴스에는 JDK가 미리 설치되어 있어야 함
+
 #### SSH 키 생성(server1 에서)
 ```ssh
 # ssh-keygen -t rsa 명령어로 키페어 생성
