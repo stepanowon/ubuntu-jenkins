@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "bento/ubuntu-24.04"
+  config.vm.box = "gutehall/ubuntu24-04"
 
   # CPU, Memory 설정
   config.vm.provider "virtualbox" do |vb|
@@ -27,10 +27,6 @@ Vagrant.configure("2") do |config|
 	{
 	  "name" => "set-user-key",
 	  "path" => "scripts/set-user-key.sh"
-	},
-	{
-	  "name" => "allow-bridge-nf-traffic",
-	  "path" => "scripts/allow-bridge-nf-traffic.sh"
 	},
 	{
 	  "name" => "install-essential-tools",
